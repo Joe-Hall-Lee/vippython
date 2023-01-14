@@ -1,0 +1,5 @@
+src_file = open('哈工大5.jpg', 'rb')
+target_file = open('copy哈工大5.jpg', 'wb')
+target_file.write(src_file.read())
+target_file.close()
+src_file.close()
