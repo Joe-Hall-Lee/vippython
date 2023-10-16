@@ -1,4 +1,5 @@
 import os
+
 filename = 'student.txt'
 
 
@@ -72,7 +73,7 @@ def insert():
         else:
             break
 
-    # 调用save函数
+    # 调用 save 函数
     save(student_list)
     print('学生信息录入完毕！')
 
@@ -83,7 +84,7 @@ def save(lst):
     except:
         stu_txt = open(filename, 'w', encoding='utf-8')
     for item in lst:
-        stu_txt.write(str(item)+'\n')
+        stu_txt.write(str(item) + '\n')
     stu_txt.close()
 
 
@@ -141,7 +142,7 @@ def show_student(lst):
                                  item.get('Python'),
                                  item.get('Java'),
                                  int(item.get('English')) +
-                                 int(item.get('Python'))+int(item.get('Java'))
+                                 int(item.get('Python')) + int(item.get('Java'))
                                  ))
 
 
@@ -161,7 +162,7 @@ def delete():
                     for item in student_old:
                         d = dict(eval(item))  # 将字符串转成字典
                         if d['id'] != student_id:
-                            wfile.write(str(d)+'\n')
+                            wfile.write(str(d) + '\n')
                         else:
                             flag = True
                     if flag:
@@ -202,10 +203,10 @@ def modify():
                         print('您的输入有误，请重新输入！')
                     else:
                         break
-                wfile.write(str(d)+'\n')
+                wfile.write(str(d) + '\n')
                 print('修改成功！')
             else:
-                wfile.write(str(d)+'\n')
+                wfile.write(str(d) + '\n')
             answer = input('是否继续修改其它学生信息？y/n\n')
             if answer == 'y':
                 modify()
@@ -242,7 +243,7 @@ def sort():
             x['Java']), reverse=asc_or_desc_bool)
     elif mode == '0':
         student_new.sort(key=lambda x: int(
-            x['English'])+int(x['Python'])+int(x['Java']), reverse=asc_or_desc_bool)
+            x['English']) + int(x['Python']) + int(x['Java']), reverse=asc_or_desc_bool)
     else:
         print('您的输入有误，请重新输入！')
         sort()

@@ -4,16 +4,16 @@ class Student:
         self.age = age
 
     def eat(self):
-        print(self.name+'在吃饭')
+        print(self.name + '在吃饭')
 
 
 stu1 = Student('张三', 20)
 stu2 = Student('李四', 30)
 print(id(stu1))
 print(id(stu2))
-print('------------为stu2动态绑定性别属性-----------------------')
+print('------------为 stu2 动态绑定性别属性-----------------------')
 stu2.gender = '女'
-# print(stu1.name,stu1.age,stu1.gender)
+# print(stu1.name, stu1.age, stu1.gender)
 print(stu1.name, stu1.age)
 print(stu2.name, stu2.age, stu2.gender)
 
@@ -29,4 +29,4 @@ def show():
 stu1.show = show
 stu1.show()
 
-# stu2.show()  # 因为stu2并没有绑定show方法
+# stu2.show()  # 因为 stu2 并没有绑定 show 方法

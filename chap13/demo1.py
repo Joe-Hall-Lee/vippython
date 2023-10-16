@@ -6,6 +6,6 @@ class Car:
         print('汽车已启动')
 
 
-car = Car('宝马X5')
+car = Car('宝马 X5')
 car.start()
 print(car.brand)
