@@ -1,4 +1,4 @@
-def fun(a, b=10):  # b称为默认值参数
+def fun(a, b=10):  # b 称为默认值参数
     print(a, b)
 
 

@@ -4,7 +4,7 @@ print('添加元素之前：', lst, id(lst))
 lst.append(100)
 print('添加元素之后：', lst, id(lst))
 lst2 = ['hello', 'world']
-# lst.append(lst2)  # 将lst2作为一个元素添加到列表的末尾
+# lst.append(lst2)  # 将 lst2 作为一个元素添加到列表的末尾
 # 向列表的末尾一次性添加多个元素
 lst.extend(lst2)
 print(lst)
@@ -14,6 +14,6 @@ lst.insert(1, 90)
 print(lst)
 
 lst3 = [True, False, 'hello']
-# 在任意位置上添加n多个元素
+# 在任意位置上添加 n 多个元素
 lst[1:] = lst3
 print(lst)

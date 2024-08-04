@@ -1,4 +1,4 @@
-class Person(object):  # person继承object类
+class Person(object):  # person 继承 object 类
     def __init__(self, name, age):
         self.name = name
         self.age = age

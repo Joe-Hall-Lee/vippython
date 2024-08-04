@@ -2,7 +2,7 @@ class Student:  # Student 为类的名称（类名），由一个或多个单词
     native_place = '黑龙江'  # 直接写在类里的变量，称为类属性
 
     def __init__(self, name, age):
-        self.name = name  # "self.name“称为实体属性，进行了一个赋值的操作，将局部变量的 name 的值赋给实体属性
+        self.name = name  # self.name 称为实体属性，进行了一个赋值的操作，将局部变量的 name 的值赋给实体属性
         self.age = age
 
     # 实例方法

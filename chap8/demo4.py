@@ -4,7 +4,7 @@ t = ('Python', 'world', 98)
 print(t[0])
 print(t[1])
 print(t[2])
-# print(t[3]) #IndexError: tuple index out of range
+# print(t[3])  # IndexError: tuple index out of range
 '''遍历元组'''
 for item in t:
     print(item)

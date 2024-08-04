@@ -11,7 +11,7 @@ print(type(t2))
 t3 = ('Python',)  # 如果元组中只有一个元素，逗号不能省
 print(t3)
 print(type(t3))
-'''第二种创建方式，使用内置函数tuple()'''
+'''第二种创建方式，使用内置函数 tuple()'''
 t1 = tuple(('Python', 10, 89))
 print(t1)
 print(type(t1))

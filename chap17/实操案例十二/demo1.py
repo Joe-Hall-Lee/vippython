@@ -6,10 +6,10 @@ class Circle(object):
         self.r = r
 
     def get_area(self):
-        return math.pi*math.pow(self.r, 2)
+        return math.pi * math.pow(self.r, 2)
 
     def get_perimeter(self):
-        return 2*math.pi*self.r
+        return 2 * math.pi * self.r
 
 
 if __name__ == '__main__':

@@ -3,10 +3,10 @@ def is_triangle(a, b, c):
         raise Exception('三条边不能是负数')
 
     # 判断是否能构成三角形
-    if a+b > c and a+c > b and b+c > a:
-        print(f'三角形的边长为a={a},b={b},c={c}')
+    if a + b > c and a + c > b and b + c > a:
+        print(f'三角形的边长为 a = {a}, b = {b}, c = {c}')
     else:
-        raise Exception(f'a={a},b={b},c={c},不能构成三角形')
+        raise Exception(f'a = {a}, b = {b}, c = {c}, 不能构成三角形')
 
 
 if __name__ == '__main__':

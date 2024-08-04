@@ -19,7 +19,7 @@ if __name__ == '__main__':
             break
         # 开始在文件中查找
         replay = find_answer(question)
-        if not replay:  # 如果回复的是False， not False-->True
+        if not replay:  # 如果回复的是 False，not False --> True
             question = input(
                 '抱歉，这里无法解决您的问题，您可以问一些关于书场性质、内容管理、团结法则、权力声明、伙伴关系、制度守则、管理人员、生效声明等问题，退出请输入“再见”。')
         else:

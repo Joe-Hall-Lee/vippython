@@ -13,7 +13,7 @@ if __name__ == '__main__':
     print('请输入五位学员的信息：（姓名#年龄#性别#成绩）')
     lst = []
     for i in range(0, 5):
-        s = input(f'请输入第{i+1}位学员的信息和成绩：')
+        s = input(f'请输入第 {i + 1} 位学员的信息和成绩：')
         s_lst = s.split('#')
         # print(s_lst)
         # 创建学生对象

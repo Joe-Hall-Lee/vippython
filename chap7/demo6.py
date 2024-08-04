@@ -1,7 +1,7 @@
-d = {'name': '张三', 'name': '李四'}  # key不允许重复
+d = {'name': '张三', 'name': '李四'}  # key 不允许重复
 print(d)
 
-d = {'name': '张三', 'nickname': '张三'}  # value允许重复
+d = {'name': '张三', 'nickname': '张三'}  # value 允许重复
 print(d)
 
 lst = [10, 20, 30]

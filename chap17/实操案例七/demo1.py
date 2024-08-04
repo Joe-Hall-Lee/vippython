@@ -6,7 +6,8 @@ word = ['我要', '我有', '我变', '我觉得', '我决定', '我分析',
 
 # 将两个列表转成集合
 d = dict(zip(constellation, word))
-'''for item in d:
+'''
+for item in d:
     print(item,d[item])
 '''
 print(d)

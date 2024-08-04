@@ -5,6 +5,6 @@ try:
 except BaseException as e:
     print('出错了', e)
 else:
-    print('计算结果为 ', result)
+    print('计算结果为', result)
 finally:
     print('谢谢您的使用')

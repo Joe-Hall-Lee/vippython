@@ -2,7 +2,7 @@ class Student:  # Student 为类的名称（类名），由一个或多个单词
     name = 'Joe'  # 直接写在类里的变量，称为类属性
 
     def __init__(self, name, age):
-        self.name = name  # "self.name“称为实体属性，进行了一个赋值的操作，将局部变量的 name 的值赋给实体属性
+        self.name = name  # self.name 称为实体属性，进行了一个赋值的操作，将局部变量的 name 的值赋给实体属性
         self.age = age
 
     # 实例方法
@@ -18,6 +18,7 @@ class Student:  # Student 为类的名称（类名），由一个或多个单词
     @classmethod
     def method(cls):
         print('我是类方法，因为我使用了 classmethod 进行修饰')
+
 
 # 在类之外定义的称为函数，在类之内定义的称为方法
 

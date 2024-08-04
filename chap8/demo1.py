@@ -6,6 +6,6 @@ print(id(lst))
 '''不可变序列，字符串，元组'''
 s = 'hello'
 print(id(s))
-s = s+'world'
+s = s + 'world'
 print(id(s))
 print(s)

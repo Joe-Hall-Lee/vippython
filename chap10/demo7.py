@@ -1,4 +1,4 @@
-def fun(a, b, c):  # a,b,c在函数的定义处，所以是形式参数
+def fun(a, b, c):  # a, b, c 在函数的定义处，所以是形式参数
     print('a=', a)
     print('b=', b)
     print('c=', c)

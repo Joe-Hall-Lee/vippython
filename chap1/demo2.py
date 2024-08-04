@@ -3,7 +3,7 @@ print('hello\nworld')  # \+ 转义功能的首字母：n-->newline 的首字母�
 print('hello\tworld')
 print('helloooo\tworld')
 print('hello\rworld')  # world 将 hello 进行了覆盖
-print('hello\bworld')  # \b是退一个格，将 o 退没了
+print('hello\bworld')  # \b 是退一个格，将 o 退没了
 
 print('http:\\\\www.baidu.com')
 print('老师说:\'大家好\'')

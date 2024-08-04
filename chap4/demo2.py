@@ -1,5 +1,5 @@
 # 测试对象的布尔值
-print('---------------以下对象的布尔值为False---------------------')
+print('---------------以下对象的布尔值为 False---------------------')
 print(bool(False))  # False
 print(bool(0))  # False
 print(bool(0.0))  # False
@@ -14,7 +14,7 @@ print(bool({}))  # 空字典
 print(bool(dict()))  # 空字典
 print(bool(set()))  # 空集合
 
-print('---------------其它对象的布尔值均为True----------------------')
+print('---------------其它对象的布尔值均为 True----------------------')
 print(bool(18))
 print(bool(True))
 print(bool('helloworld'))

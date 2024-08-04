@@ -6,7 +6,7 @@ print(100 in s)  # False
 print(100 not in s)  # True
 print(10 not in s)  # True
 '''集合元素的新增操作'''
-s.add(80)  # add一次添加一个元素
+s.add(80)  # add 一次添加一个元素
 print(s)
 s.update({13, 79, 86})  # 一次至少添加一个元素
 print(s)

@@ -1,7 +1,8 @@
 import random
+
 rand = random.randint(1, 100)
 for i in range(1, 11):
-    num = int(input('在我心中有个数1-100，请你猜一猜'))
+    num = int(input('在我心中有个数 1-100，请你猜一猜'))
     if num < rand:
         print('小了')
     elif num > rand:

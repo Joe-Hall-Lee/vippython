@@ -3,10 +3,10 @@ lst.remove(30)
 print(lst)
 # lst.remove(100) #ValueError: list.remove(x): x not in list
 
-# pop()根据索引移除元素
+# pop() 根据索引移除元素
 lst.pop(1)
 print(lst)
-# lst.pop(5) #IndexError: pop index out of range 如果指定的索引位置不存在，将抛出异常
+# lst.pop(5)  # IndexError: pop index out of range 如果指定的索引位置不存在，将抛出异常
 lst.pop()  # 如果不指定参数（索引），将删除列表中的最后一个元素
 print(lst)
 

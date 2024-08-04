@@ -3,13 +3,13 @@ print('apple' > 'banana')  # False
 print(ord('a'), ord('b'))
 print(ord('周'))
 
-
 print(chr(97), chr(98))
 print(chr(21608))
 
-'''== 与 is 的区别
-== 比较的是value
-is 比较的是id是否相等
+'''
+    == 与 is 的区别
+    == 比较的是 value
+    is 比较的是 id 是否相等
 '''
 a = b = 'Python'
 c = 'Python'

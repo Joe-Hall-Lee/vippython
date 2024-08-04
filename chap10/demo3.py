@@ -1,2 +1,2 @@
 print(bool(0))  # False
-print(bool(8))  # 非0的布尔值为True
+print(bool(8))  # 非 0 的布尔值为 True

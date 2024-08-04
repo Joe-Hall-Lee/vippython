@@ -1,4 +1,4 @@
-s = 'hello,Python'
+s = 'hello, Python'
 '''居中对齐'''
 print(s.center(20, '*'))
 
@@ -12,7 +12,7 @@ print(s.rjust(20, '*'))
 print(s.rjust(20))
 print(s.rjust(10))
 
-'''右对齐，使用0进行填充'''
+'''右对齐，使用 0 进行填充'''
 print(s.zfill(20))
 print(s.zfill(10))
 print('-9809'.zfill(8))

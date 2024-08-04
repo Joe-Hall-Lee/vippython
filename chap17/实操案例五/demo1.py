@@ -1,4 +1,4 @@
-x = 97  # 代表的是a的ASCⅡ值
+x = 97  # 代表的是 a 的 ASCⅡ 值
 for _ in range(1, 27):
     print(chr(x), '--->', x)
     x += 1

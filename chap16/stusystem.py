@@ -34,21 +34,21 @@ def main():
 def menu():
     print('====================学生信息管理系统===================================')
     print('------------------------功能菜单------------------------')
-    print('\t\t\t\t\t\t1.录入学生信息')
-    print('\t\t\t\t\t\t2.查找学生信息')
-    print('\t\t\t\t\t\t3.删除学生信息')
-    print('\t\t\t\t\t\t4.修改学生信息')
-    print('\t\t\t\t\t\t5.排序')
-    print('\t\t\t\t\t\t6.统计学生总人数')
-    print('\t\t\t\t\t\t7.显示所有学生信息')
-    print('\t\t\t\t\t\t0.退出')
+    print('\t\t\t\t\t\t1. 录入学生信息')
+    print('\t\t\t\t\t\t2. 查找学生信息')
+    print('\t\t\t\t\t\t3. 删除学生信息')
+    print('\t\t\t\t\t\t4. 修改学生信息')
+    print('\t\t\t\t\t\t5. 排序')
+    print('\t\t\t\t\t\t6. 统计学生总人数')
+    print('\t\t\t\t\t\t7. 显示所有学生信息')
+    print('\t\t\t\t\t\t0. 退出')
     print('-------------------------------------------------')
 
 
 def insert():
     student_list = []
     while True:
-        id = input('请输入ID（如1001）：')
+        id = input('请输入 ID（如 1001）：')
         if not id:
             break
         name = input('请输入姓名：')
@@ -57,8 +57,8 @@ def insert():
 
         try:
             English = int(input('请输入英语成绩：'))
-            Python = int(input('请输入Python成绩：'))
-            Java = int(input('请输入Java成绩：'))
+            Python = int(input('请输入 Python 成绩：'))
+            Java = int(input('请输入 Java 成绩：'))
         except:
             print('输入无效，不是整数类型，请重新输入')
             continue
@@ -94,9 +94,9 @@ def search():
         id = ''
         name = ''
         if os.path.exists(filename):
-            mode = input('按ID查找请输入1，按姓名查找请输入2：')
+            mode = input('按 ID 查找请输入 1，按姓名查找请输入 2：')
             if mode == '1':
-                id = input('请输入学生ID：')
+                id = input('请输入学生 ID：')
             elif mode == '2':
                 name = input('请输入学生姓名：')
             else:
@@ -132,7 +132,7 @@ def show_student(lst):
         return
     # 定义标题的显示格式
     format_title = '{:^6}\t{:^12}\t{:^8}\t{:^10}\t{:^10}\t{:^8}\t'
-    print(format_title.format('ID', '姓名', '英语成绩', 'Python成绩', 'Java成绩', '总成绩'))
+    print(format_title.format('ID', '姓名', '英语成绩', 'Python 成绩', 'Java 成绩', '总成绩'))
     # 定义内容的显示格式
     format_data = '{:^6}\t{:^12}\t{:^8}\t{:^8}\t{:^8}\t{:^8}\t'
     for item in lst:
@@ -148,7 +148,7 @@ def show_student(lst):
 
 def delete():
     while True:
-        student_id = input('请输入要删除的学生ID：')
+        student_id = input('请输入要删除的学生 ID：')
         if student_id != '':
             if os.path.exists(filename):
                 with open(filename, 'r', encoding='utf-8') as file:
@@ -166,9 +166,9 @@ def delete():
                         else:
                             flag = True
                     if flag:
-                        print(f'ID为{student_id}的学生信息已被删除')
+                        print(f'ID 为 {student_id} 的学生信息已被删除')
                     else:
-                        print(f'没有找到ID为{student_id}的学生信息')
+                        print(f'没有找到 ID 为 {student_id} 的学生信息')
             else:
                 print('无学生信息')
                 break
@@ -187,7 +187,7 @@ def modify():
             student_old = rfile.readlines()
     else:
         return
-    student_id = input('请输入要修改的学员的ID：')
+    student_id = input('请输入要修改的学员的 ID：')
     with open(filename, 'w', encoding='utf-8') as wfile:
         for item in student_old:
             d = dict(eval(item))
@@ -197,8 +197,8 @@ def modify():
                     try:
                         d['name'] = input('请输入姓名：')
                         d['English'] = input('请输入英语成绩：')
-                        d['Python'] = input('请输入Python成绩：')
-                        d['Java'] = input('请输入Java成绩：')
+                        d['Python'] = input('请输入 Python 成绩：')
+                        d['Java'] = input('请输入 Java 成绩：')
                     except:
                         print('您的输入有误，请重新输入！')
                     else:
@@ -223,7 +223,7 @@ def sort():
             student_new.append(d)
     else:
         return
-    asc_or_desc = input('请选择(0.升序 1.降序):')
+    asc_or_desc = input('请选择(0. 升序 1. 降序）:')
     if asc_or_desc == '0':
         asc_or_desc_bool = False
     elif asc_or_desc == '1':
@@ -231,7 +231,7 @@ def sort():
     else:
         print('您的输入有误，请重新输入。')
         sort()
-    mode = input('请选择排序方式（1.按英语成绩排序 2.按Python成绩排序 3.按Java成绩排序 0.按总成绩排序）：')
+    mode = input('请选择排序方式（1. 按英语成绩排序 2. 按 Python 成绩排序 3. 按 Java 成绩排序 0. 按总成绩排序）：')
     if mode == '1':
         student_new.sort(key=lambda x: int(
             x['English']), reverse=asc_or_desc_bool)
@@ -255,7 +255,7 @@ def total():
         with open(filename, 'r', encoding='utf-8') as rfile:
             students = rfile.readlines()
             if students:
-                print(f'一共有{len(students)}名学生。')
+                print(f'一共有 {len(students)} 名学生。')
             else:
                 print('还没有录入学生信息。')
     else:

@@ -9,23 +9,23 @@ def calc(a, b, op):
         if b != 0:
             return div(a, b)
         else:
-            return '除数不能为0'
+            return '除数不能为 0'
 
 
 def add(a, b):
-    return a+b
+    return a + b
 
 
 def sub(a, b):
-    return a-b
+    return a - b
 
 
 def mul(a, b):
-    return a*b
+    return a * b
 
 
 def div(a, b):
-    return a/b
+    return a / b
 
 
 if __name__ == '__main__':

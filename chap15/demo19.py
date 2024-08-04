@@ -1,4 +1,5 @@
 import os
+
 path = os.getcwd()
 lst_files = os.walk(path)
 print(lst_files)

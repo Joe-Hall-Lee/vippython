@@ -9,7 +9,7 @@ class Student:
 
 stu = Student('张三', 20)
 stu.show()
-# 在类的外部使用name与age
+# 在类的外部使用 name 与 age
 print(stu.name)
 # print(stu.__age)
 # print(dir(stu))

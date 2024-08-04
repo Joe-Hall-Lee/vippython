@@ -17,12 +17,13 @@ fun1(a=20, b=30, c=40)
 
 print('hello', 'world', 'Python')
 
-'''def fun2((*args,*a):
-   pass
-   以上代码，程序会报错，个数可变的位置参数，只能是1个
-   def fun2((**args1,**args2)):
-   pass
-   以上代码，程序会报错，个数可变的关键字参数，只能是1个
+'''
+def fun2((*args, *a):
+    pass
+以上代码，程序会报错，个数可变的位置参数，只能是 1 个
+    def fun2((**args1, **args2)):
+    pass
+以上代码，程序会报错，个数可变的关键字参数，只能是 1 个
 '''
 
 

@@ -15,12 +15,12 @@ class Computer:
         self.disk = disk
 
 
-# (1)变量的赋值
+# （1）变量的赋值
 cpu1 = CPU()
 cpu2 = cpu1
 print(cpu1, id(cpu1))
 print(cpu2, id(cpu2))
-# (2)类的浅拷贝
+# （2）类的浅拷贝
 print('--------------------------------------')
 disk = DISK()  # 创建一个硬盘类的对象
 computer = Computer(cpu1, disk)  # 创建一个计算机类的对象

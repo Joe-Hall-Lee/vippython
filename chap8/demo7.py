@@ -1,4 +1,4 @@
-'''两个集合是否相等(元素相同就相等）'''
+'''两个集合是否相等（元素相同就相等）'''
 s = {12, 4, 5, 56}
 s2 = {5, 12, 56, 4}
 print(s == s2)  # True
@@ -15,7 +15,7 @@ print(s1.issuperset(s2))  # True
 print(s2.issuperset(s3))  # False
 
 '''两个集合是否没有交集'''
-print(s1.isdisjoint(s2))  # False  有交集为False
+print(s1.isdisjoint(s2))  # False, 有交集为 False
 s4 = {100, 200, 300}
 
-print(s2.isdisjoint(s4))  # True  没有交集为True
+print(s2.isdisjoint(s4))  # True, 没有交集为 True

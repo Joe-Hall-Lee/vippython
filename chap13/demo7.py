@@ -17,6 +17,7 @@ class Person:
     def eat(self):
         print('人吃五谷杂粮')
 
+
 # 定义一个函数
 
 
